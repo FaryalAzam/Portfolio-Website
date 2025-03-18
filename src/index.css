@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --breakpoint-sm: 350px;  /* Small devices (e.g., phones) */
+  --breakpoint-md: 768px;  /* Medium devices (e.g., tablets) */
+  --breakpoint-lg: 1024px; /* Large devices (e.g., small laptops) */
+  --breakpoint-xl: 1280px; /* Extra large devices (e.g., desktops) */
+  --breakpoint-2xl: 1535px; /* Extra extra large devices (e.g., large desktops) */
+
+
+    --font-JosefinSans: "Josefin Sans", sans-serif;
+    --font-Roboto: "Roboto", sans-serif;
+    --color-pp:  #F72585;
+    --color-qq:  #b517b5;
+    --color-qqh:  #7209B7;
+    --color-qqa: #560ba5;
+    --color-qqb: #480CA8;
+    --color-qqc: #3A0CA3;
+    --color-qqd: #3F37C9;
+    --color-qqe: #4361EE;
+    --color-qqf: #4895EF;
+    --color-qqg: #4CC9F0;
+    --color-darkbrown: #2c2523;
+    --color-black: #1e1917;
+    --color-brown: #53423e;
+    --color-lightBrown: #645550;
+    --color-darkBrown: #2c2523;
+    --color-black: #1e1917;
+    --color-white: #f1e1d9;
+    --color-cyan: #15d1e9;
+    --color-lightCyan: #88e5f0;
+    --color-darkCyan: #009fb3;
+    --color-orange: #fb9718;
+    --color-lightOrange: #fac27b;
+    --color-darkOrange: #d28422;
+    --color-grey: #626965;
+    --color-lightGrey: #978580;
+    --color-darkGrey: #3f4441;
+
+
+
+
+    --shadow-cyan:  0px 0px 20px 0px rgba(94, 206, 220, 0.5); 
+    --shadow-cyanBigShadow: 10px 10px 1000px 500px rgba(94, 206, 220, 0.3);
+    --shadow-cyanMediumShadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+     --shadow-orangeBigShadow: 10px 10px 10000px 500px rgba(240, 169, 79, 0.3);
+      --shadow-orangeMediumShadow: 10px 10px 2000px 150px rgba(240, 169, 79, 0.5)
+
+}
+
+/* Custom Tailwind classes */
+@layer base {
+  body {
+    font-family: var(--font-JosefinSans);
+    background-color: black ;
+
+  }
+
+}
