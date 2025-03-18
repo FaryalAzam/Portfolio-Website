@@ -10,7 +10,7 @@ const projects = [
 
     name:'Nike Ecommerce Website' ,
     align:'right',
-    image: '../../public/nike.JPG',
+    image: 'nike.JPG',
     Link: 'https://nike-website1.vercel.app/',
 
 
@@ -20,7 +20,7 @@ const projects = [
 
   name:'Code Editor' ,
   align:'left',
-  image: '../../public/code editor.JPG',
+  image: 'code editor.JPG',
   Link: 'https://faryalazam.github.io/Code-Editor/',
 
 },
@@ -29,7 +29,7 @@ const projects = [
 
 name:'Resume Builder' ,
 align:'right',
-image: '../../public/resume builder.JPG',
+image: 'resume builder.JPG',
 Link: 'https://editable-resume-blue.vercel.app/',
 
 },
@@ -38,7 +38,7 @@ Link: 'https://editable-resume-blue.vercel.app/',
 
   name:'Bootstrap Website' ,
   align:'left',
-  image: '../../public/bootstrap.JPG',
+  image: 'bootstrap.JPG',
   Link: 'https://faryalazam.github.io/Bootstrap-Website/',
 
 
@@ -48,7 +48,7 @@ Link: 'https://editable-resume-blue.vercel.app/',
 
 name:'Glowing Bulb Effect' ,
 align:'right',
-image: '../../public/bulb.png',
+image: 'bulb.png',
 Link: 'https://faryalazam.github.io/Glowing-Bulb-Effect/',
 
 },
