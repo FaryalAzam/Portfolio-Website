@@ -15,7 +15,7 @@ const NavLink = () => {
         return (
           <li key={index} className="group">
             <Link
-             to={link.section}
+              to={link.section}
               spy={true}
               smooth={true}
               duration={500}
