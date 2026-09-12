@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Manrope:wght@200..800&family=Tangerine:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --breakpoint-sm: 350px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1535px;
+  
+  --font-manrope: "Manrope", sans-serif;
+  --font-elsie: "Elsie Swash Caps", serif;
+  --font-tangerine: "Tangerine", cursive;
+
+  --color-pp:  #F72585;
+  --color-qq:  #b517b5;
+  --color-qqh:  #7209B7;
+  --color-qqa: #560ba5;
+  --color-qqb: #480CA8;
+  --color-qqc: #3A0CA3;
+  --color-qqd: #3F37C9;
+  --color-qqe: #4361EE;
+  --color-qqf: #4895EF;
+  --color-qqg: #4CC9F0;
+  
+  --color-darkbrown: #2c2523;
+  --color-black: #1e1917;
+  --color-brown: #53423e;
+  --color-lightBrown: #645550;
+  --color-darkBrown: #2c2523;
+  --color-white: #f1e1d9;
+  
+  --color-cyan: #15d1e9;
+  --color-lightCyan: #88e5f0;
+  --color-darkCyan: #009fb3;
+  
+  --color-orange: #fb9718;
+  --color-lightOrange: #fac27b;
+  --color-darkOrange: #d28422;
+  
+  --color-grey: #626965;
+  --color-lightGrey: #978580;
+  --color-darkGrey: #3f4441;
+
+  --shadow-cyan:  0px 0px 20px 0px rgba(94, 206, 220, 0.5); 
+  --shadow-cyanBigShadow: 10px 10px 1000px 500px rgba(94, 206, 220, 0.3);
+  --shadow-cyanMediumShadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5); 
+  --shadow-orangeBigShadow: 10px 10px 10000px 500px rgba(240, 169, 79, 0.3);  
+  --shadow-orangeMediumShadow: 10px 10px 2000px 150px rgba(240, 169, 79, 0.5);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    font-family: var(--font-manrope);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-manrope);
+  }
+
+  ::selection {
+    background: var(--color-cyan);
+    color: var(--color-black);
+  }
+}
+
+@layer base {
+  html, body {
+    @apply overflow-x-hidden;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.02); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(20px) scale(0.98); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0) scale(1); }
+  33% { transform: translateY(-15px) translateX(15px) scale(1.05); }
+  66% { transform: translateY(15px) translateX(-15px) scale(0.95); }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% { transform: translateY(0) translateX(0) scale(1); }
+  33% { transform: translateY(15px) translateX(-15px) scale(0.95); }
+  66% { transform: translateY(-15px) translateX(15px) scale(1.05); }
+}
+
+@keyframes slide-bg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-slow {
+  animation: float-slow 25s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 30s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-slide-bg {
+  animation: slide-bg 60s linear infinite;
+  background-size: 200% 200%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float, 
+  .animate-float-reverse, 
+  .animate-float-slow,
+  .animate-float-slow-reverse,
+  .animate-slide-bg,
+  .animate-[spin], 
+  .animate-pulse,
+  .animate-bounce {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Hide or reduce expensive animations on mobile */
+@media (max-width: 768px) {
+  .mobile-no-animate {
+    animation: none !important;
+    transform: none !important;
+  }
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+
+@keyframes blob-spin {
+  0% { transform: rotate(0deg) scale(1) translate(0px, 0px); }
+  33% { transform: rotate(120deg) scale(1.1) translate(20px, -20px); }
+  66% { transform: rotate(240deg) scale(0.9) translate(-20px, 20px); }
+  100% { transform: rotate(360deg) scale(1) translate(0px, 0px); }
+}
+
+@keyframes aurora-bg {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes beam-sweep {
+  0% { transform: translateY(-100%) translateX(0); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(1000px) translateX(0); opacity: 0; }
+}
+
+@keyframes spotlight-pan {
+  0%, 100% { transform: translate(-10%, -10%) scale(1); }
+  33% { transform: translate(10%, 10%) scale(1.1); }
+  66% { transform: translate(-5%, 5%) scale(0.95); }
+}
+
+.animate-blob {
+  animation: blob-spin 25s infinite linear;
+  will-change: transform;
+}
+
+.animate-blob-reverse {
+  animation: blob-spin 30s infinite reverse linear;
+  will-change: transform;
+}
+
+.animate-aurora-bg {
+  animation: aurora-bg 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-beam-sweep {
+  animation: beam-sweep 8s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-spotlight-pan {
+  animation: spotlight-pan 15s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
