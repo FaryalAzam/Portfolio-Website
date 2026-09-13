@@ -29,12 +29,12 @@ const NavMain = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-0 left-0 w-full z-50 transition duration-150 ${
+      className={`fixed top-0 left-0 w-full z-50 transition- duration-75 ease-out ease-out ${
         scrolled ? "py-4" : "py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className={`flex items-center justify-between px-4 sm:px-6 py-4 rounded-full border transition duration-150 ${
+        <div className={`flex items-center justify-between px-4 sm:px-6 py-4 rounded-full border transition- duration-75 ease-out ease-out ${
           scrolled 
             ? "bg-black/60 backdrop-blur-md  border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]" 
             : "bg-transparent border-transparent"
@@ -58,7 +58,7 @@ const NavMain = () => {
                 className="text-sm text-lightGrey hover:text-white transition-colors cursor-pointer relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-cyan transition duration-150 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-cyan transition- duration-75 ease-out ease-out group-hover:w-full"></span>
               </Link>
             ))}
           </div>
@@ -66,8 +66,8 @@ const NavMain = () => {
           <div className="hidden lg:block">
             <Link to="contact" smooth={true} offset={-100} className="cursor-pointer">
               <button className="relative px-6 py-2.5 text-sm font-medium text-black bg-white rounded-full overflow-hidden group">
-                <span className="relative z-10 group-hover:text-white transition-colors duration-150">Let's Talk</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-150 ease-out z-0"></div>
+                <span className="relative z-10 group-hover:text-white transition--colors duration-75 ease-out ease-out">Let's Talk</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition--transform duration-75 ease-out ease-out z-0"></div>
               </button>
             </Link>
           </div>
@@ -99,7 +99,7 @@ const NavMain = () => {
                   smooth={true}
                   offset={-100}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg text-lightGrey hover:text-white hover:pl-2 transition cursor-pointer border-b border-white/5 pb-2"
+                  className="text-lg text-lightGrey hover:text-white hover:pl-2 transition- duration-75 ease-out ease-out cursor-pointer border-b border-white/5 pb-2"
                 >
                   {item.name}
                 </Link>
@@ -111,7 +111,7 @@ const NavMain = () => {
                 onClick={() => setIsOpen(false)}
                 className="mt-4"
               >
-                <button className="w-full py-3 text-sm font-medium text-black bg-white rounded-full hover:bg-gradient-to-r hover:from-cyan hover:to-orange hover:text-white transition duration-150">
+                <button className="w-full py-3 text-sm font-medium text-black bg-white rounded-full hover:bg-gradient-to-r hover:from-cyan hover:to-orange hover:text-white transition- duration-75 ease-out ease-out">
                   Let's Talk
                 </button>
               </Link>

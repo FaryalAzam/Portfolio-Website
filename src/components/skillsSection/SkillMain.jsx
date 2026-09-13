@@ -68,7 +68,7 @@ const CategoryGrid = ({ category }) => {
             key={index}
             onPointerEnter={() => setHovered(index)}
             onPointerLeave={() => setHovered(null)}
-            className={`flex flex-col items-center justify-center gap-3 p-4 rounded-xl transition duration-150 cursor-pointer ${
+            className={`flex flex-col items-center justify-center gap-3 p-4 rounded-xl transition- duration-75 ease-out ease-out cursor-pointer ${
               isBig 
                 ? 'bg-black/60 scale-110 -translate-y-2 -translate-x-2 z-20 border border-cyan/50 shadow-[0_0_15px_rgba(21,209,233,0.5)]'
                 : isSmall 
@@ -76,10 +76,10 @@ const CategoryGrid = ({ category }) => {
                   : 'bg-black/40 scale-100 z-0 border border-white/5'
             }`}
           >
-            <div className={`text-3xl transition-transform duration-150 ${isBig ? 'scale-110' : ''}`}>
+            <div className={`text-3xl transition--transform duration-75 ease-out ease-out ${isBig ? 'scale-110' : ''}`}>
               {skill.icon}
             </div>
-            <span className={`text-xs font-medium transition-colors duration-150 ${isBig || isSmall ? 'text-white' : 'text-lightGrey'}`}>
+            <span className={`text-xs font-medium transition--colors duration-75 ease-out ease-out ${isBig || isSmall ? 'text-white' : 'text-lightGrey'}`}>
               {skill.name}
             </span>
           </div>
@@ -130,9 +130,9 @@ const SkillMain = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ }}
-              className="p-8 rounded-3xl bg-white/[0.02]  border border-white/5 hover:border-cyan/30 hover:bg-white/[0.04] transition duration-150 hover:shadow-[0_0_30px_rgba(21,209,233,0.1)] group relative overflow-hidden"
+              className="p-8 rounded-3xl bg-white/[0.02]  border border-white/5 hover:border-cyan/30 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out hover:shadow-[0_0_30px_rgba(21,209,233,0.1)] group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0 pointer-events-none"></div>
               <h4 className="text-xl font-semibold mb-6 text-white relative z-10">{category.title}</h4>
               <div className="relative z-10">
                 <CategoryGrid category={category} />

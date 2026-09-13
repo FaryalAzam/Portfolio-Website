@@ -107,7 +107,7 @@ const CodeBlock = ({ snippet, className, depth, mouseX, mouseY, cssAnimationClas
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: targetOpacity }}
-        transition={{ opacity: { duration: 1.5, ease: "easeOut" } }}
+        transition={{ opacity: { duration: 0.2, ease: "easeOut" } }}
       >
         <pre className="font-mono text-[10px] md:text-xs leading-relaxed text-white/80 whitespace-pre">
           <code dangerouslySetInnerHTML={{ __html: highlightCode(snippet) }} />
@@ -123,8 +123,8 @@ export default function LiveCodingBackground() {
   const mouseY = useMotionValue(0);
   
   // Smooth out mouse movement
-  const springX = useSpring(mouseX, { stiffness: 40, damping: 20 });
-  const springY = useSpring(mouseY, { stiffness: 40, damping: 20 });
+  const springX = useSpring(mouseX, { stiffness: 1200, damping: 40 });
+  const springY = useSpring(mouseY, { stiffness: 1200, damping: 40 });
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');

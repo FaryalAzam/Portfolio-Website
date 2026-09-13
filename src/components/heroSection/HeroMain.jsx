@@ -147,16 +147,16 @@ const HeroMain = () => {
             className="flex flex-col sm:flex-row items-center gap-4 mb-4 w-full sm:w-auto"
           >
             <Link to="projects" smooth={true} offset={-100} className="w-full sm:w-auto">
-              <button className="relative w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full flex items-center justify-center gap-2 transition duration-150 group overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(21,209,233,0.3)] hover:scale-105">
-                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-150">
+              <button className="relative w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full flex items-center justify-center gap-2 transition- duration-75 ease-out ease-out group overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(21,209,233,0.3)] hover:scale-105">
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition--colors duration-75 ease-out ease-out">
                   View My Work
-                  <LuArrowUpRight className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <LuArrowUpRight className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-75 ease-out" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-150 ease-out z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition--transform duration-75 ease-out ease-out z-0"></div>
               </button>
             </Link>
             <Link to="contact" smooth={true} offset={-100} className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto px-8 py-4 bg-white/[0.03]  border border-white/20 text-white font-semibold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 hover:border-cyan/50 hover:shadow-[0_0_20px_rgba(21,209,233,0.2)] hover:text-cyan transition duration-150">
+              <button className="w-full sm:w-auto px-8 py-4 bg-white/[0.03]  border border-white/20 text-white font-semibold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 hover:border-cyan/50 hover:shadow-[0_0_20px_rgba(21,209,233,0.2)] hover:text-cyan transition- duration-75 ease-out ease-out">
                 Let's Work Together
               </button>
             </Link>
@@ -168,13 +168,13 @@ const HeroMain = () => {
             transition={{ duration: 0.15, }}
             className="flex items-center gap-6"
           >
-            <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition duration-150 text-lightGrey hover:-translate-y-1">
+            <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
               <FiGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition duration-150 text-lightGrey hover:-translate-y-1">
+            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
               <FiLinkedin size={20} />
             </a>
-            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-orange hover:text-orange transition duration-150 text-lightGrey hover:-translate-y-1">
+            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-orange hover:text-orange transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
               <SiUpwork size={20} />
             </a>
           </motion.div>

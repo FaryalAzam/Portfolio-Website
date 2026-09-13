@@ -56,10 +56,10 @@ const ExperienceMain = () => {
                 boxShadow: "0px 10px 40px -10px rgba(21,209,233, 0.3)",
                 borderColor: "rgba(21,209,233, 0.4)"
               }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition cursor-pointer relative overflow-hidden group"
+              transition={{ type: "spring", stiffness: 800, damping: 25 }}
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-cyan tracking-wider uppercase mb-2 block">Present</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Freelance Web Developer</h4>
@@ -87,10 +87,10 @@ const ExperienceMain = () => {
                 boxShadow: "0px 10px 40px -10px rgba(251,151,24, 0.3)",
                 borderColor: "rgba(251,151,24, 0.4)"
               }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition cursor-pointer relative overflow-hidden group"
+              transition={{ type: "spring", stiffness: 800, damping: 25 }}
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-orange tracking-wider uppercase mb-2 block">2024 - 2025</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Saylani Mass IT Training</h4>
@@ -118,10 +118,10 @@ const ExperienceMain = () => {
                 boxShadow: "0px 10px 40px -10px rgba(255,255,255, 0.2)",
                 borderColor: "rgba(255,255,255, 0.3)"
               }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition cursor-pointer relative overflow-hidden group"
+              transition={{ type: "spring", stiffness: 800, damping: 25 }}
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-lightGrey tracking-wider uppercase mb-2 block">2023 - 2024</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Self-Taught Developer</h4>

@@ -20,11 +20,11 @@ const NavLink = () => {
               smooth={true}
               duration={500}
               offset={-130}
-              className="cursor-pointer text-white hover:text-cyan transition duration-150"
+              className="cursor-pointer text-white hover:text-cyan transition- duration-75 ease-out ease-out"
             >
               {link.link}
             </Link>
-            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition duration-150"></div>
+            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition- duration-75 ease-out ease-out"></div>
           </li>
         );
       })}

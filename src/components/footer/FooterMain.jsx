@@ -19,13 +19,13 @@ const FooterMain = () => {
               A passionate Frontend Developer specializing in building modern, responsive, and high-quality web applications.
             </p>
             <div className="flex gap-4">
-              <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-cyan hover:border-cyan hover:bg-cyan/10 hover:shadow-[0_0_15px_rgba(21,209,233,0.3)] hover:-translate-y-1 transition duration-150">
+              <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-cyan hover:border-cyan hover:bg-cyan/10 hover:shadow-[0_0_15px_rgba(21,209,233,0.3)] hover:-translate-y-1 transition- duration-75 ease-out ease-out">
                 <FiGithub size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-cyan hover:border-cyan hover:bg-cyan/10 hover:shadow-[0_0_15px_rgba(21,209,233,0.3)] hover:-translate-y-1 transition duration-150">
+              <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-cyan hover:border-cyan hover:bg-cyan/10 hover:shadow-[0_0_15px_rgba(21,209,233,0.3)] hover:-translate-y-1 transition- duration-75 ease-out ease-out">
                 <FiLinkedin size={20} />
               </a>
-              <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-orange hover:border-orange hover:bg-orange/10 hover:shadow-[0_0_15px_rgba(251,151,24,0.3)] hover:-translate-y-1 transition duration-150">
+              <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/[0.02]  border border-white/10 flex items-center justify-center text-lightGrey hover:text-orange hover:border-orange hover:bg-orange/10 hover:shadow-[0_0_15px_rgba(251,151,24,0.3)] hover:-translate-y-1 transition- duration-75 ease-out ease-out">
                 <SiUpwork size={20} />
               </a>
             </div>

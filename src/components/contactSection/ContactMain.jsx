@@ -29,54 +29,54 @@ const ContactMain = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mx-auto">
-            <a href="mailto:faryalazam212@gmail.com" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-cyan/50 hover:bg-white/[0.04] transition duration-150 hover:shadow-[0_0_30px_rgba(21,209,233,0.15)] hover:-translate-y-1 w-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+            <a href="mailto:faryalazam212@gmail.com" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-cyan/50 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out hover:shadow-[0_0_30px_rgba(21,209,233,0.15)] hover:-translate-y-1 w-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10 flex items-center gap-4 w-full">
-                <div className="w-14 h-14 rounded-full bg-cyan/10 flex items-center justify-center group-hover:bg-cyan group-hover:text-black transition duration-150 text-cyan shrink-0 shadow-[0_0_15px_rgba(21,209,233,0.2)]">
+                <div className="w-14 h-14 rounded-full bg-cyan/10 flex items-center justify-center group-hover:bg-cyan group-hover:text-black transition- duration-75 ease-out ease-out text-cyan shrink-0 shadow-[0_0_15px_rgba(21,209,233,0.2)]">
                   <FiMail size={24} />
                 </div>
                 <div className="text-left overflow-hidden">
-                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition-colors duration-150">Email</p>
-                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-cyan transition-colors duration-150">faryalazam212@gmail.com</p>
+                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition--colors duration-75 ease-out ease-out">Email</p>
+                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-cyan transition--colors duration-75 ease-out ease-out">faryalazam212@gmail.com</p>
                 </div>
               </div>
             </a>
             
-            <div className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-orange/50 hover:bg-white/[0.04] transition duration-150 hover:shadow-[0_0_30px_rgba(251,151,24,0.15)] hover:-translate-y-1 w-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+            <div className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-orange/50 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out hover:shadow-[0_0_30px_rgba(251,151,24,0.15)] hover:-translate-y-1 w-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10 flex items-center gap-4 w-full">
-                <div className="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition duration-150 text-orange shrink-0 shadow-[0_0_15px_rgba(251,151,24,0.2)]">
+                <div className="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition- duration-75 ease-out ease-out text-orange shrink-0 shadow-[0_0_15px_rgba(251,151,24,0.2)]">
                   <FiMapPin size={24} />
                 </div>
                 <div className="text-left overflow-hidden">
-                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition-colors duration-150">Location</p>
-                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-orange transition-colors duration-150">Available Worldwide</p>
+                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition--colors duration-75 ease-out ease-out">Location</p>
+                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-orange transition--colors duration-75 ease-out ease-out">Available Worldwide</p>
                 </div>
               </div>
             </div>
 
-            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-cyan/50 hover:bg-white/[0.04] transition duration-150 hover:shadow-[0_0_30px_rgba(21,209,233,0.15)] hover:-translate-y-1 w-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-cyan/50 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out hover:shadow-[0_0_30px_rgba(21,209,233,0.15)] hover:-translate-y-1 w-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10 flex items-center gap-4 w-full">
-                <div className="w-14 h-14 rounded-full bg-cyan/10 flex items-center justify-center group-hover:bg-cyan group-hover:text-black transition duration-150 text-cyan shrink-0 shadow-[0_0_15px_rgba(21,209,233,0.2)]">
+                <div className="w-14 h-14 rounded-full bg-cyan/10 flex items-center justify-center group-hover:bg-cyan group-hover:text-black transition- duration-75 ease-out ease-out text-cyan shrink-0 shadow-[0_0_15px_rgba(21,209,233,0.2)]">
                   <FiLinkedin size={24} />
                 </div>
                 <div className="text-left overflow-hidden">
-                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition-colors duration-150">LinkedIn</p>
-                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-cyan transition-colors duration-150">Let's Connect</p>
+                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition--colors duration-75 ease-out ease-out">LinkedIn</p>
+                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-cyan transition--colors duration-75 ease-out ease-out">Let's Connect</p>
                 </div>
               </div>
             </a>
 
-            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-orange/50 hover:bg-white/[0.04] transition duration-150 hover:shadow-[0_0_30px_rgba(251,151,24,0.15)] hover:-translate-y-1 w-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-0"></div>
+            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="relative flex items-center gap-4 group bg-white/[0.02]  border border-white/5 px-6 py-6 rounded-3xl hover:border-orange/50 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out hover:shadow-[0_0_30px_rgba(251,151,24,0.15)] hover:-translate-y-1 w-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
               <div className="relative z-10 flex items-center gap-4 w-full">
-                <div className="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition duration-150 text-orange shrink-0 shadow-[0_0_15px_rgba(251,151,24,0.2)]">
+                <div className="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition- duration-75 ease-out ease-out text-orange shrink-0 shadow-[0_0_15px_rgba(251,151,24,0.2)]">
                   <SiUpwork size={24} />
                 </div>
                 <div className="text-left overflow-hidden">
-                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition-colors duration-150">Upwork</p>
-                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-orange transition-colors duration-150">Hire Me</p>
+                  <p className="text-sm text-lightGrey mb-1 group-hover:text-white transition--colors duration-75 ease-out ease-out">Upwork</p>
+                  <p className="text-white font-medium text-base sm:text-lg truncate group-hover:text-orange transition--colors duration-75 ease-out ease-out">Hire Me</p>
                 </div>
               </div>
             </a>
