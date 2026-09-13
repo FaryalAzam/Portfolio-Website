@@ -80,9 +80,9 @@ const HeroMain = () => {
         {/* Text Content */}
         <div className="flex flex-col items-start text-left">
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.15, }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5  mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-cyan animate-pulse"></span>
@@ -91,26 +91,26 @@ const HeroMain = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight flex flex-col gap-1 md:gap-2">
             <motion.span 
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.15, }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             >
               Hi, I'm
             </motion.span>
             
             <motion.span 
-              initial={{ opacity: 0, scale: 0.8, filter: 'blur(10px)' }}
+              initial={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
               animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.15, }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
               className="text-transparent bg-clip-text bg-gradient-to-r from-cyan via-orange to-cyan animate-gradient-x pb-2 drop-shadow-[0_0_15px_rgba(21,209,233,0.3)]"
             >
               <span className="font-elsie font-black">F</span>aryal <span className="font-elsie font-black ml-2 sm:ml-3">A</span>zam
             </motion.span>
             
             <motion.div 
-              initial={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.15, }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               className="mt-1 h-[1.2em] flex items-center"
             >
               <TypeAnimation
@@ -132,49 +132,49 @@ const HeroMain = () => {
           </h1>
 
           <motion.p 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.15, }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             className="max-w-xl text-lg md:text-xl text-lightGrey mb-10 leading-relaxed"
           >
             I build modern, responsive and high-quality web experiences that turn ideas into functional digital products.
           </motion.p>
 
           <motion.div 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.15, }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-4 w-full sm:w-auto"
           >
             <Link to="projects" smooth={true} offset={-100} className="w-full sm:w-auto">
-              <button className="relative w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full flex items-center justify-center gap-2 transition- duration-75 ease-out ease-out group overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(21,209,233,0.3)] hover:scale-105">
-                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition--colors duration-75 ease-out ease-out">
+              <button className="relative w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full flex items-center justify-center gap-2 transition duration-75 ease-out group overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(21,209,233,0.3)] hover:scale-105">
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-75 ease-out">
                   View My Work
                   <LuArrowUpRight className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-75 ease-out" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition--transform duration-75 ease-out ease-out z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan to-orange scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-75 ease-out z-0"></div>
               </button>
             </Link>
             <Link to="contact" smooth={true} offset={-100} className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto px-8 py-4 bg-white/[0.03]  border border-white/20 text-white font-semibold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 hover:border-cyan/50 hover:shadow-[0_0_20px_rgba(21,209,233,0.2)] hover:text-cyan transition- duration-75 ease-out ease-out">
+              <button className="w-full sm:w-auto px-8 py-4 bg-white/[0.03]  border border-white/20 text-white font-semibold rounded-full flex items-center justify-center gap-2 hover:bg-white/10 hover:border-cyan/50 hover:shadow-[0_0_20px_rgba(21,209,233,0.2)] hover:text-cyan transition duration-75 ease-out">
                 Let's Work Together
               </button>
             </Link>
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.15, }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             className="flex items-center gap-6"
           >
-            <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
+            <a href="https://github.com/FaryalAzam" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition duration-75 ease-out text-lightGrey hover:-translate-y-1">
               <FiGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
+            <a href="https://www.linkedin.com/in/faryal-azam-a83852305/" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-cyan hover:text-cyan transition duration-75 ease-out text-lightGrey hover:-translate-y-1">
               <FiLinkedin size={20} />
             </a>
-            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-orange hover:text-orange transition- duration-75 ease-out ease-out text-lightGrey hover:-translate-y-1">
+            <a href="https://www.upwork.com/freelancers/~01cf64dd2b269b0bad?mp_source=share" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full border border-white/10 hover:border-orange hover:text-orange transition duration-75 ease-out text-lightGrey hover:-translate-y-1">
               <SiUpwork size={20} />
             </a>
           </motion.div>
@@ -184,7 +184,7 @@ const HeroMain = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="relative lg:h-[600px] flex items-center justify-center mt-12 lg:mt-0"
         >
           {/* Decorative glowing rings */}

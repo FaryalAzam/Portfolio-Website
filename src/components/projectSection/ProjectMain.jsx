@@ -130,7 +130,7 @@ const ProjectMain = () => {
               <button
                 key={index}
                 onClick={() => setActiveCategory(cat)}
-                className="relative px-5 py-2 rounded-full text-sm font-medium transition--colors duration-75 ease-out ease-out outline-none"
+                className="relative px-5 py-2 rounded-full text-sm font-medium transition-colors duration-75 ease-out outline-none"
               >
                 {activeCategory === cat && (
                   <motion.div 
@@ -139,7 +139,7 @@ const ProjectMain = () => {
                     transition={{ type: "spring", stiffness: 1000, damping: 30 }}
                   />
                 )}
-                <span className={`relative z-10 transition--colors duration-75 ease-out ease-out ${activeCategory === cat ? 'text-black font-semibold' : 'text-lightGrey hover:text-white'}`}>
+                <span className={`relative z-10 transition-colors duration-75 ease-out ${activeCategory === cat ? 'text-black font-semibold' : 'text-lightGrey hover:text-white'}`}>
                   {cat}
                 </span>
               </button>
@@ -154,34 +154,34 @@ const ProjectMain = () => {
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.15, }}
-                className={`group relative rounded-3xl p-[1px] bg-white/[0.05] hover:bg-gradient-to-br hover:from-cyan hover:via-orange hover:to-cyan transition- duration-75 ease-out ease-out shadow-lg hover:shadow-[0_0_40px_rgba(21,209,233,0.3)]  overflow-hidden ${
+            exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: (index % 2) * 0.1 }}
+                className={`group relative rounded-3xl p-[1px] bg-white/[0.05] hover:bg-gradient-to-br hover:from-cyan hover:via-orange hover:to-cyan transition duration-75 ease-out shadow-lg hover:shadow-[0_0_40px_rgba(21,209,233,0.3)]  overflow-hidden ${
                   filteredProjects.length % 2 !== 0 && index === filteredProjects.length - 1
                     ? 'col-span-1 md:col-span-2 w-[85%] md:w-[calc(50%-1rem)] lg:w-[calc(50%-1.25rem)] mx-auto'
                     : ''
                 }`}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out z-0 pointer-events-none"></div>
                 <div className="flex flex-col bg-black/80  rounded-[23px] overflow-hidden h-full relative z-10">
                   {/* Image Container */}
                   <div className="relative w-full aspect-video bg-black/60 overflow-hidden p-2">
                     <img 
                       src={project.image} 
                       alt={project.name} 
-                      className="w-full h-full object-contain object-center transition--transform duration-75 ease-out ease-out group-hover:scale-110 rounded-2xl" 
+                      className="w-full h-full object-contain object-center transition-transform duration-75 ease-out group-hover:scale-110 rounded-2xl" 
                     />
                     
                     {/* Hover Overlay with Icons */}
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out flex items-center justify-center gap-4 backdrop-blur-[2px]">
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out flex items-center justify-center gap-4 backdrop-blur-[2px]">
                       <a 
                         href={project.link} 
                         target="_blank" 
                         rel="noreferrer" 
-                        className="w-14 h-14 bg-white text-black rounded-full flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition- duration-75 ease-out ease-out hover:scale-110 shadow-lg"
+                        className="w-14 h-14 bg-white text-black rounded-full flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition duration-75 ease-out hover:scale-110 shadow-lg"
                         title="View Live Project"
                       >
                         <FiExternalLink size={24} />
@@ -192,7 +192,7 @@ const ProjectMain = () => {
                           href={project.github} 
                           target="_blank" 
                           rel="noreferrer" 
-                          className="w-14 h-14 bg-black/80 border border-white/20 text-white rounded-full flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition- duration-75 ease-out ease-out hover:scale-110 shadow-lg"
+                          className="w-14 h-14 bg-black/80 border border-white/20 text-white rounded-full flex items-center justify-center transform translate-y-4 group-hover:translate-y-0 transition duration-75 ease-out hover:scale-110 shadow-lg"
                           title="View Source Code"
                         >
                           <FiGithub size={24} />

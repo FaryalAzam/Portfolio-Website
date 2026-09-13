@@ -19,18 +19,19 @@ const ExperienceMain = () => {
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <motion.h2 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-sm font-bold text-cyan uppercase tracking-[0.2em] mb-4"
           >
             My Journey
           </motion.h2>
           <motion.h3 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight"
           >
             Web Development <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-orange font-elsie font-black pr-2">Timeline</span>
@@ -42,9 +43,10 @@ const ExperienceMain = () => {
           
           {/* Timeline Item 1 */}
           <motion.div 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative mb-16 md:w-1/2 md:pr-12 md:text-right"
           >
             <div className="absolute top-6 -left-[41px] md:left-auto md:-right-[5px] w-3 h-3 bg-cyan rounded-full shadow-[0_0_15px_rgba(21,209,233,0.8)]"></div>
@@ -57,9 +59,9 @@ const ExperienceMain = () => {
                 borderColor: "rgba(21,209,233, 0.4)"
               }}
               transition={{ type: "spring", stiffness: 800, damping: 25 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition duration-75 ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-cyan tracking-wider uppercase mb-2 block">Present</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Freelance Web Developer</h4>
@@ -72,10 +74,10 @@ const ExperienceMain = () => {
 
           {/* Timeline Item 2 */}
           <motion.div 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative mb-16 md:w-1/2 md:ml-auto md:pl-12"
           >
             <div className="absolute top-6 -left-[41px] md:-left-[5px] w-3 h-3 bg-orange rounded-full shadow-[0_0_15px_rgba(251,151,24,0.8)]"></div>
@@ -88,9 +90,9 @@ const ExperienceMain = () => {
                 borderColor: "rgba(251,151,24, 0.4)"
               }}
               transition={{ type: "spring", stiffness: 800, damping: 25 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition duration-75 ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-orange tracking-wider uppercase mb-2 block">2024 - 2025</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Saylani Mass IT Training</h4>
@@ -103,10 +105,10 @@ const ExperienceMain = () => {
 
           {/* Timeline Item 3 */}
           <motion.div 
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative md:w-1/2 md:pr-12 md:text-right"
           >
             <div className="absolute top-6 -left-[41px] md:left-auto md:-right-[5px] w-3 h-3 bg-white/30 rounded-full"></div>
@@ -119,9 +121,9 @@ const ExperienceMain = () => {
                 borderColor: "rgba(255,255,255, 0.3)"
               }}
               transition={{ type: "spring", stiffness: 800, damping: 25 }}
-              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition- duration-75 ease-out ease-out cursor-pointer relative overflow-hidden group"
+              className="p-6 rounded-3xl bg-white/[0.02]  border border-white/5 transition duration-75 ease-out cursor-pointer relative overflow-hidden group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out z-0"></div>
               <div className="relative z-10">
                 <span className="text-sm font-semibold text-lightGrey tracking-wider uppercase mb-2 block">2023 - 2024</span>
                 <h4 className="text-2xl font-bold text-white mb-2">Self-Taught Developer</h4>

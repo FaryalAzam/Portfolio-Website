@@ -42,10 +42,10 @@ const AboutMain = () => {
           
           {/* Text Content */}
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.15 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h2 className="text-sm font-bold text-cyan uppercase tracking-[0.2em] mb-4">About Me</h2>
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
@@ -68,13 +68,13 @@ const AboutMain = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature, idx) => (
-                <div key={idx} className="relative group flex gap-4 p-5 rounded-3xl bg-white/[0.02]  border border-white/5 hover:border-cyan/30 hover:bg-white/[0.04] transition- duration-75 ease-out ease-out overflow-hidden hover:shadow-[0_0_20px_rgba(21,209,233,0.15)] hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out z-0"></div>
-                  <div className="mt-1 relative z-10 group-hover:scale-110 transition--transform duration-75 ease-out ease-out drop-shadow-[0_0_8px_rgba(21,209,233,0.3)]">
+                <div key={idx} className="relative group flex gap-4 p-5 rounded-3xl bg-white/[0.02]  border border-white/5 hover:border-cyan/30 hover:bg-white/[0.04] transition duration-75 ease-out overflow-hidden hover:shadow-[0_0_20px_rgba(21,209,233,0.15)] hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out z-0"></div>
+                  <div className="mt-1 relative z-10 group-hover:scale-110 transition-transform duration-75 ease-out drop-shadow-[0_0_8px_rgba(21,209,233,0.3)]">
                     {feature.icon}
                   </div>
                   <div className="relative z-10">
-                    <h4 className="text-white font-bold mb-1 group-hover:text-cyan transition--colors duration-75 ease-out ease-out">{feature.title}</h4>
+                    <h4 className="text-white font-bold mb-1 group-hover:text-cyan transition-colors duration-75 ease-out">{feature.title}</h4>
                     <p className="text-sm text-lightGrey leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
@@ -84,13 +84,13 @@ const AboutMain = () => {
 
           {/* Visual Content */}
           <motion.div 
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.15 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative lg:h-[600px] rounded-3xl border border-white/10 bg-white/5 overflow-hidden group flex items-center justify-center p-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan/10 to-orange/10 opacity-50 group-hover:opacity-100 transition--opacity duration-75 ease-out ease-out"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan/10 to-orange/10 opacity-50 group-hover:opacity-100 transition-opacity duration-75 ease-out"></div>
             
             {/* Abstract 3D/Tech Representation */}
             <div className="relative w-full aspect-square max-w-md">
@@ -102,7 +102,7 @@ const AboutMain = () => {
                 <img 
                   src="/about me.png" 
                   alt="Faryal Azam" 
-                  className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(21,209,233,0.4)] group-hover:scale-105 transition--transform duration-75 ease-out ease-out relative z-10"
+                  className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(21,209,233,0.4)] group-hover:scale-105 transition-transform duration-75 ease-out relative z-10"
                 />
               </div>
 

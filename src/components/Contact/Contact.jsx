@@ -34,13 +34,13 @@ export default function Contact() {
         </div>
         
         <div className="flex items-center space-x-4 mb-6">
-          <FaLinkedin className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition- duration-75 ease-out ease-out" />
+          <FaLinkedin className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-75 ease-out ease-out" />
           <a href="https://www.linkedin.com/in/faryal-azam-a83852305/"
                target="_blank" rel="noopener noreferrer" 
           className="text-[var(--color-lightCyan)] font-semibold text-sm md:text-base hover:underline">LinkedIn Profile</a>
         </div>
         <div className="flex items-center space-x-4">
-          <FaGithub className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition- duration-75 ease-out ease-out" />
+          <FaGithub className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-75 ease-out ease-out" />
           <a href="https://github.com/FaryalAzam"
                target="_blank" rel="noopener noreferrer" 
           className="text-[var(--color-lightCyan)] font-semibold text-sm md:text-base hover:underline">GitHub Profile</a>
