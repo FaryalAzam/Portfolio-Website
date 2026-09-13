@@ -10,7 +10,7 @@ const links = [
 
 const NavLink = () => {
   return (
-    <ul className="flex lg:flex-row sm:flex-col gap-6 text-white font-manrope font-medium lg:relative sm:absolute sm:top-[120%] text-center left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan/30 backdrop-blur-lg lg:bg-black sm:w-full py-4">
+    <ul className="flex lg:flex-row sm:flex-col gap-6 text-white font-manrope font-medium lg:relative sm:absolute sm:top-[120%] text-center left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan/30  lg:bg-black sm:w-full py-4">
       {links.map((link, index) => {
         return (
           <li key={index} className="group">
@@ -20,11 +20,11 @@ const NavLink = () => {
               smooth={true}
               duration={500}
               offset={-130}
-              className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+              className="cursor-pointer text-white hover:text-cyan transition duration-150"
             >
               {link.link}
             </Link>
-            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition duration-150"></div>
           </li>
         );
       })}

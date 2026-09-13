@@ -8,7 +8,7 @@ export default function Contact() {
       {/* Heading with Futuristic Glow */}
       <motion.h2 
         className="text-4xl md:text-6xl font-bold text-[var(--color-cyan)] neon-glow drop-shadow-xl"
-        initial={{ opacity: 0, y: -50 }}
+        initial={{ opacity: 1, y: 0-50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
@@ -20,7 +20,7 @@ export default function Contact() {
 
       {/* Glassmorphic Card */}
       <motion.div 
-        className="relative mt-10 w-full max-w-md md:max-w-lg mx-auto bg-[rgba(255,255,255,0.1)] backdrop-blur-lg p-6 md:p-8 rounded-3xl shadow-[0px_0px_30px_var(--color-cyan)] border border-[rgba(255,255,255,0.2)] transition-transform hover:scale-105"
+        className="relative mt-10 w-full max-w-md md:max-w-lg mx-auto bg-[rgba(255,255,255,0.1)]  p-6 md:p-8 rounded-3xl shadow-[0px_0px_30px_var(--color-cyan)] border border-[rgba(255,255,255,0.2)] transition-transform hover:scale-105"
         whileHover={{ scale: 1.05 }}
       >
         {/* Funky Elements */}
@@ -34,13 +34,13 @@ export default function Contact() {
         </div>
         
         <div className="flex items-center space-x-4 mb-6">
-          <FaLinkedin className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-300" />
+          <FaLinkedin className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-150" />
           <a href="https://www.linkedin.com/in/faryal-azam-a83852305/"
                target="_blank" rel="noopener noreferrer" 
           className="text-[var(--color-lightCyan)] font-semibold text-sm md:text-base hover:underline">LinkedIn Profile</a>
         </div>
         <div className="flex items-center space-x-4">
-          <FaGithub className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-300" />
+          <FaGithub className="text-[var(--color-cyan)] text-2xl md:text-3xl transform hover:scale-125 transition duration-150" />
           <a href="https://github.com/FaryalAzam"
                target="_blank" rel="noopener noreferrer" 
           className="text-[var(--color-lightCyan)] font-semibold text-sm md:text-base hover:underline">GitHub Profile</a>

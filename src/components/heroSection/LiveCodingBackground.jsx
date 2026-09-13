@@ -34,9 +34,9 @@ export const HeroSection = () => {
 `const ProjectCard = ({ project, index }) => {
   return (
     <motion.article 
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.1 }}
+      transition={{ }}
       className="group relative rounded-2xl bg-white/5"
     >
       <div className="absolute inset-0 bg-cyan/10 opacity-0 group-hover:opacity-100" />
